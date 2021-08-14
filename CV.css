@@ -1,0 +1,67 @@
+﻿/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+}
+
+/* Centered text */
+.name {
+    position: absolute;
+    top: 19%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    color: #374F3F;
+}
+
+.navigation {
+    position: absolute;
+    top: 15%;
+    left: 4%;
+    background-color: rgba(0,0,0,0.2);
+    width: 300px;
+    border: 3px solid #545B63;
+    padding-bottom: 30px;
+    padding-right: 0px;
+    border-radius: 25px;
+}
+
+.education {
+    top: 20%;
+    left: 11%;
+    font-size: 40px;
+    color: #546765;
+    margin: 55px;
+    
+}
+
+    .experience {
+    top: 40%;
+    left: 11%;
+    font-size: 40px;
+    color: #546765;
+    margin: 55px;
+}
+.about {
+    top: 50%;
+    left: 11%;
+    font-size: 40px;
+    color: #546765;
+    margin: 55px;
+}
+.contact {
+    top: 65%;
+    left: 11%;
+    font-size: 40px;
+    color: #546765;
+    margin: 35px;
+}
+a {
+    color: #374F3F;
+}
+
+
+    a:hover {
+        color: #551D02;
+    }
+
