@@ -1,37 +1,26 @@
 ﻿<!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <title>Elie Ohayon</title>
+    <script src="CV.js"></script>
     <link rel="stylesheet" href="CV.css">
 </head>
-
-<body>
+<body onload="changeTitle()">
     <div class="container">
-        <img src="image1.jpg" alt="oops" width="1536" height="864">
-
-        <div class="name">Elie Ohayon</div>
-
-        <div class="navigation">
-            <div class="education">
-                <a href="#education">Education</a>
+        <div class="grid-container">
+            <div class="header">Header</div>
+            <div class="left">
+                <img class="img" src="image3.jpg">
+                <span class="name">Elie Ohayon</span>
+                <button id="startButton" onclick="animation()">Start</button>
             </div>
-            <div class="experience">
-                <a href="#experience">Experience</a>
+            <div class="right">
+                <span id="ball"></span>
             </div>
-            <div class="about">
-                <a href="#about">About me</a>
-            </div>
-            <div class="contact">
-                <a href="#contact" >Contact</a>
-            </div>
+            <div class="footer">Footer</div>
         </div>
 
     </div>
-
-
-
-
 </body>
 </html>

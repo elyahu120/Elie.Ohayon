@@ -1,67 +1,72 @@
-﻿/* Container holding the image and the text */
-.container {
-    position: relative;
-    text-align: center;
-}
+﻿.header { grid-area: header; }
+.left { grid-area: left; }
+.right { grid-area: right; }
+.footer { grid-area: footer; }
 
-/* Centered text */
+.grid-container {
+    position: relative;
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'left left right right'
+    'footer footer footer footer';
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 10vh 100vh 10vh;
+    grid-gap: 0.2vh;
+    background-color: #2196F3;
+    padding: 0.2vh;
+}
+.header {
+    background-color: rgba(190, 6, 175, 0.8);
+    text-align: center;
+    padding: 2vh 0;
+    font-size: 30px;
+}
+.left {
+    background-color: rgba(228, 245, 1, 0.8);
+    text-align: center;
+    padding: 2vh 0;
+    font-size: 3vh;
+}.right {
+     background-color: rgba(238, 75, 75, 0.8);
+     text-align: center;
+     padding: 2vh 0;
+     font-size: 3vh;
+ }
+.footer {
+    background-color: rgba(25, 255, 48, 0.8);
+    text-align: center;
+    padding: 2vh 0;
+    font-size: 3vh;
+}
+.img {
+    position: absolute;
+    width: 35vh;
+    padding: 1vh;
+    border: 0.2vh solid black;
+    left: 3vh;
+}
 .name {
     position: absolute;
-    top: 19%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 150px;
-    color: #374F3F;
+    padding-left: 1vh;
+    padding-right: 21vh;
+    border: 0.2vh solid black;
+    left: 3vh;
+    top: 51vh;
 }
-
-.navigation {
+#ball {
     position: absolute;
-    top: 15%;
-    left: 4%;
-    background-color: rgba(0,0,0,0.2);
-    width: 300px;
-    border: 3px solid #545B63;
-    padding-bottom: 30px;
-    padding-right: 0px;
-    border-radius: 25px;
+    left:60vh;
+    padding-right: 3vh;
+    padding-top: 3vh;
+    border: 0.55vh solid red;
+    background-color: black;
+    border-radius: 50vh;
 }
-
-.education {
-    top: 20%;
-    left: 11%;
-    font-size: 40px;
-    color: #546765;
-    margin: 55px;
-    
+#startButton {
+    position: absolute;
+    padding: 1vh;
+    font-size: 3vh;
+    top: 20vh;
+    left: 50vh;
 }
-
-    .experience {
-    top: 40%;
-    left: 11%;
-    font-size: 40px;
-    color: #546765;
-    margin: 55px;
-}
-.about {
-    top: 50%;
-    left: 11%;
-    font-size: 40px;
-    color: #546765;
-    margin: 55px;
-}
-.contact {
-    top: 65%;
-    left: 11%;
-    font-size: 40px;
-    color: #546765;
-    margin: 35px;
-}
-a {
-    color: #374F3F;
-}
-
-
-    a:hover {
-        color: #551D02;
-    }
-
